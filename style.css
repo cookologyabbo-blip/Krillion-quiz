@@ -11,7 +11,7 @@ body, html {
     overflow: hidden;
 }
 
-/* De oceaan verandert van kleur naarmate de 'depth' (klasse) verandert */
+/* De oceaan verandert van kleur naarmate je dieper duikt */
 .ocean {
     width: 100%;
     height: 100vh;
@@ -30,25 +30,25 @@ body, html {
 .ocean.depth-3 { background: linear-gradient(to bottom, #050505, #000000); }
 
 .game-container {
-    width: 800px;
+    width: 850px;
     max-width: 90%;
-    background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(12px);
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     z-index: 10;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     letter-spacing: 2px;
     margin-bottom: 5px;
 }
 
 .depth-meter {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #00ffcc;
     margin-bottom: 20px;
     font-weight: bold;
@@ -56,12 +56,13 @@ header h1 {
 
 .quiz-box h2 {
     margin-bottom: 20px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
 }
 
 .answers-list {
-    min-height: 150px;
-    max-height: 250px;
+    min-height: 140px;
+    max-height: 220px;
     overflow-y: auto;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 8px;
@@ -77,7 +78,7 @@ header h1 {
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
-    animation: fadeIn 0.5s ease;
+    animation: fadeIn 0.4s ease;
 }
 
 .host-controls {
@@ -89,7 +90,7 @@ header h1 {
 
 .host-controls input {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
     padding: 12px;
     border-radius: 5px;
     border: none;
@@ -106,8 +107,8 @@ button {
 }
 
 #addBtn { background: #ffcc00; color: #333; }
-.primary-btn { background: #00ffcc; color: #111; width: 100%; margin-top: 10px; }
-.secondary-btn { background: #fff; color: #111; width: 100%; margin-top: 10px; }
+.primary-btn { background: #00ffcc; color: #111; width: 100%; margin-top: 5px; }
+.secondary-btn { background: #fff; color: #111; width: 100%; margin-top: 5px; }
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
